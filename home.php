@@ -10,16 +10,16 @@
         </div>
     </section>
 
-    <section class="s-vantagens">
+    <section class="s-benefits">
         <div class="container">
-            <div class="grid-vantagens">
+            <div class="grid-benefits">
 
                 <?php 
                 $itens_simule_topo = get_field('itens_simule_topo', $post->ID);
                 if(!empty($itens_simule_topo)){
                     foreach($itens_simule_topo as $item){
-                       ?>
-                       <div class="item">
+                     ?>
+                     <div class="item">
                         <div class="ico">
                             <img src="<?= $item['icone'] ?>" alt="<?= $item['titulo'] ?>" />
                             <h3><?= $item['titulo'] ?></h3>
@@ -44,8 +44,8 @@
                 $itens_vantagens = get_field('itens_vantagens', $post->ID);
                 if(!empty($itens_vantagens)){
                     foreach($itens_vantagens as $item){
-                       ?>
-                       <div class="item" data-aos="fade-up" data-aos-duration="1500">
+                     ?>
+                     <div class="item" data-aos="fade-up" data-aos-duration="1500">
                         <div class="ico">
                             <img src="<?= $item['icone'] ?>" alt="<?= $item['titulo'] ?>" />
                         </div>
@@ -74,13 +74,13 @@
                             $lista_nossa_plataforma = get_field('lista_nossa_plataforma', $post->ID);
                             if(!empty($lista_nossa_plataforma)){
                                 foreach($lista_nossa_plataforma as $item){
-                                   ?>
-                                   <li><?= $item['item'] ?></li>
-                               <?php } 
-                           } ?>
-                       </ul>
+                                 ?>
+                                 <li><?= $item['item'] ?></li>
+                             <?php } 
+                         } ?>
+                     </ul>
 
-                       <div class="shop">
+                     <div class="shop">
                         <a href="<?php the_field('google_play', 'option'); ?>" target="_blank">
                             <img src="<?= get_template_directory_uri(); ?>/assets/images/app_google.webp" alt="" />
                         </a>
@@ -106,11 +106,11 @@
                 <a href="<?php the_field('link_botao_proposito', $post->ID); ?>"  data-aos="fade-right" data-aos-duration="2500" class="btn">Simule agora</a>
             </div>
             <div class="img" data-aos="fade-left" data-aos-duration="1500">
-             <?php $imagem_proposito = get_field('imagem_proposito', $post->ID); ?>
-             <img src="<?= $imagem_proposito['sizes']['large'] ?>" alt="<?= $imagem_proposito['alt'] ?>" title="<?= $imagem_proposito['title'] ?>">
-         </div>
-     </div>
- </div>
+               <?php $imagem_proposito = get_field('imagem_proposito', $post->ID); ?>
+               <img src="<?= $imagem_proposito['sizes']['large'] ?>" alt="<?= $imagem_proposito['alt'] ?>" title="<?= $imagem_proposito['title'] ?>">
+           </div>
+       </div>
+   </div>
 </section>
 
 <section class="s-cta">

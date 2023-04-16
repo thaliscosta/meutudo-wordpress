@@ -26,12 +26,12 @@
                     </a>
                     <nav>
                         <ul>
-                            <li><a href="<?= site_url('/'); ?>">Quem somos</a></li>
-                            <li><a href="<?= site_url('/'); ?>">Seu crédito</a></li>
-                            <li><a href="<?= site_url('/'); ?>">Blog</a></li>
-                            <li><a href="<?= site_url('/'); ?>">Carreiras</a></li>
-                            <li><a href="<?= site_url('/'); ?>">Ajuda</a></li>
-                            <li><a href="<?= site_url('/'); ?>" class="login">Entrar</a></li>
+                            <li><a href="">Quem somos</a></li>
+                            <li><a href="">Seu crédito</a></li>
+                            <li><a href="">Blog</a></li>
+                            <li><a href="">Carreiras</a></li>
+                            <li><a href="">Ajuda</a></li>
+                            <li><a href="" class="login">Entrar</a></li>
                         </ul>
                     </nav>
                     <button class="toggle-menu" js-toggle-menu>

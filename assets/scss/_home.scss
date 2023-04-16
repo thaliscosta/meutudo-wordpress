@@ -40,7 +40,7 @@
         }
     }
 
-    .s-vantagens {
+    .s-benefits {
         position: relative;
         &:before{
             background-image: url(../images/shape_1.png);
@@ -57,7 +57,7 @@
             }
         }
 
-        .grid-vantagens {
+        .grid-benefits {
             display: grid;
             grid-template-columns: repeat(4, 1fr);
             gap: 30px;
@@ -206,9 +206,9 @@
         @media(max-width: 991px){
             padding: 50px 0;
             .box{
-               flex-direction: column;
-               gap: 30px;
-               .img{
+             flex-direction: column;
+             gap: 30px;
+             .img{
                 img{
                     width: 100%;
                     height: auto;
@@ -245,18 +245,18 @@
         }
     }
     .img{
-     text-align: right;
-     width: 100%;
-     img{
-      max-width: 520px;
-      height: auto;
-      width: 100%;
+       text-align: right;
+       width: 100%;
+       img{
+          max-width: 520px;
+          height: auto;
+          width: 100%;
+      }
   }
-}
-@media(max-width: 991px){
-   grid-template-columns: 1fr;
-   gap: 40px;
-}
+  @media(max-width: 991px){
+     grid-template-columns: 1fr;
+     gap: 40px;
+ }
 }
 }
 
@@ -324,18 +324,18 @@
                 top: -90px;
             }
             &:before{
-             background-image: url(../images/shape_3.png);
-             width: 440px;
-             height: 312px;
-             max-height: 100%;
-             background-size: cover;
-             background-repeat: no-repeat;
-             position: absolute;
-             left: 20px;
-             content: '';
-         }
-     }
-     .info{
+               background-image: url(../images/shape_3.png);
+               width: 440px;
+               height: 312px;
+               max-height: 100%;
+               background-size: cover;
+               background-repeat: no-repeat;
+               position: absolute;
+               left: 20px;
+               content: '';
+           }
+       }
+       .info{
         padding: 40px 0;
         h2{
             font-size: rem(40);
@@ -364,11 +364,11 @@
     padding: 50px 0;
     background-color: #000;
     .block{
-       grid-template-columns: 1fr;
-       border-radius: 0;
-       gap: 0;
-       padding-right: 0;
-       .img{
+     grid-template-columns: 1fr;
+     border-radius: 0;
+     gap: 0;
+     padding-right: 0;
+     .img{
         text-align: center;
         img{
             position: relative;
@@ -376,10 +376,10 @@
             top: inherit;
         }
         &:before{
-           display: none;
-       }
-   }
-   .info{
+         display: none;
+     }
+ }
+ .info{
     h2{
         font-size: rem(24);
         line-height: rem(34);

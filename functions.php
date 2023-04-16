@@ -1,4 +1,5 @@
 <?php 
+add_filter('show_admin_bar', '__return_false');
 
 function get_file($filename)
 {
@@ -9,7 +10,7 @@ function get_file($filename)
 	}
 }
 
-
+//Adiciona pagina de opcoes do ACF
 if( function_exists('acf_add_options_page')) {
 	acf_add_options_page(array(
 		'page_title'    => 'Geral',
@@ -21,8 +22,7 @@ if( function_exists('acf_add_options_page')) {
 	));
 }
 
-
-//Logo no login
+//Alterar o logo no login
 function my_login_logo() { ?>
 	<style type="text/css">
 		body.login #login h1 a {
