@@ -14,10 +14,3 @@ window.addEventListener('scroll', function () {
         document.querySelector('header').classList.remove('white-header');
     }
 });
-
-
-const swiperLoans = new Swiper(".swiper-loans", {
-  pagination: {
-    el: ".swiper-pagination",
-},
-});

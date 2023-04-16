@@ -68,6 +68,8 @@
                 box-shadow: 1px 3px 10px rgba(0, 0, 0, 0.2);
                 padding: 1rem 1.5rem;
                 border-radius: 25px;
+                z-index: 99;
+                position: relative;
                 .ico {
                     img {
                         width: 50px;
@@ -150,6 +152,9 @@
             position: absolute;
             right: -50px;
             bottom: 50px;
+            @media(max-width: 1500px){
+                right: -180px;
+            }
             @media(max-width: 991px){
                 display: none;
             }
