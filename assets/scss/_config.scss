@@ -24,6 +24,13 @@ ul {
 html {
   font-family: $font1;
   font-size: 16px;
+  @media(max-width: 991px){
+    font-size: 15px;
+  }
+}
+
+body{
+  overflow-x: hidden;
 }
 
 .container {
@@ -33,8 +40,15 @@ html {
   margin: 0 auto;
   @media (max-width: 991px) {
     width: 100%;
-    padding: 0 15px;
+    padding: 0 25px;
   }
+}
+
+.box-site {position:relative; overflow:hidden;}
+
+.box-center{
+  display: flex;
+  justify-content: center;
 }
 
 .btn {
@@ -46,6 +60,10 @@ html {
   font-weight: 700;
   width: 100%;
   display: block;
+  transition: 0.3s;
+  &:hover{
+    background-color: darken($pink, 14%);
+  }
 }
 
 .box-title {
@@ -60,5 +78,9 @@ html {
     margin-bottom: 45px;
     font-size: rem(24);
     line-height: rem(34);
+  }
+  p{
+    font-size: rem(16);
+    line-height: rem(26);
   }
 }

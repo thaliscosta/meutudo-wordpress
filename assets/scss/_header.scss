@@ -1,15 +1,19 @@
 .header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 99;
-  transition: 1s ease;
-  background-color: hsla(0, 0%, 100%, 0.6);
-  &.white-header {
-    background-color: #fff;
-    box-shadow: 1px 1px 30px -4px rgba(0, 0, 0, 0.5);
-    transition: 0.6s ease;
+
+  @media(min-width: 992px){
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    transition: 1s ease;
+    background-color: hsla(0, 0%, 100%, 0.6);
+    &.white-header {
+      background-color: #fff;
+      box-shadow: 1px 1px 30px -4px rgba(0, 0, 0, 0.5);
+      transition: 0.6s ease;
+    }
+
   }
 
   .top-site {
@@ -52,5 +56,87 @@
         }
       }
     }
+
+    .toggle-menu{
+      display: none;
+    }
+
   }
+
+  @media(max-width: 991px){
+    .top-site{
+      nav{
+        background-color: $pink;
+        color: #fff;
+        display: block;
+        position:fixed;
+        width:100%;
+        left:-100%;
+        top:0;
+        bottom:0;
+        padding:0;
+        z-index:99997;
+        -webkit-transition:all 0.4s ease;
+        -moz-transition:all 0.4s ease;
+        -ms-transition:all 0.4s ease;
+        -o-transition:all 0.4s ease;
+        transition:all 0.4s ease;
+        opacity: 0;
+        &.active{
+         left: 0;
+         opacity: 1;
+       }
+
+       ul{
+          display: flex;
+          flex-direction: column;
+          margin-top: 90px;
+          padding: 0;
+          a{
+            color: #fff;
+             font-size: rem(22);
+             font-weight: 500;
+            display: inline-block;
+            padding: 14px 0;
+          }
+       }
+     }
+
+     .toggle-menu{
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      justify-content: center;
+      cursor:pointer;
+      width:70px;
+      height:70px;
+      z-index:99999;
+      background: transparent;
+      border: none;
+      position: relative;
+      span {
+        display:block;
+        width: 25px;
+        height:2px;
+        background: $pink;
+        -webkit-transition:all 0.4s ease;
+        -moz-transition:all 0.4s ease;
+        -ms-transition:all 0.4s ease;
+        -o-transition:all 0.4s ease;
+        transition:all 0.4s ease;
+
+        & + span{margin-top: 8px;}
+      }
+      &.active{
+       span{
+        background-color: #fff;
+        &.line1 {-moz-transform:rotate(45deg); -webkit-transform:rotate(45deg); -o-transform:rotate(45deg); -ms-transform:rotate(45deg); transform:rotate(45deg);}
+        &.line2 {margin-top:-3px; -moz-transform:rotate(-45deg); -webkit-transform:rotate(-45deg); -o-transform:rotate(-45deg); -ms-transform:rotate(-45deg); transform:rotate(-45deg);}
+      }
+    }
+  }
+
+}
+}
+
 }
