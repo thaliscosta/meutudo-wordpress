@@ -10,7 +10,3 @@ https://drive.google.com/drive/folders/1QM3YalvAWIdRzEdP65xl36x0cRBLRrPc?usp=sha
 
 ## Deploy:
 https://dev.thaliscosta.com.br/meutudowordpress
-
-
-## Importante:
-Para o tema funcionar, é necessário ter instalado o plugin ACF PRO (Incluso na pasta de arquivos para download)
