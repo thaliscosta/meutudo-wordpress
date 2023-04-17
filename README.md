@@ -6,7 +6,7 @@ https://drive.google.com/drive/folders/1QM3YalvAWIdRzEdP65xl36x0cRBLRrPc?usp=sha
 
 - Clone este repositório dentro da pasta Themes
 - Suba o banco de dados, e altere as credenciais no arquivo wp-config.php
-- Ative o Tema, plugins, e altere os links permantes.
+- Ative o Tema, plugins, e altere os links permanentes.
 
 ## Deploy:
 https://dev.thaliscosta.com.br/meutudowordpress
